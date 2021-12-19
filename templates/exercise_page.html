@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='exercise.css') }}">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top-button"><button><span><a href="#navi">^</a></span></button></div>
+
+    <nav id="navi" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="outer-card-container">
+        <img src="" alt="" class="webcam-outlet" id="jo-change-karni-hai">
+        <button id="close">X</button>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <figcaption>Biceps Curl</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-back.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button id="bicep-start">Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /flip-card-container -->
+
+        <!-- flip-card-container -->
+        <div class="flip-card-container" style="--hue: 170">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Image 2">
+                        <figcaption>Squats</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/squats-back.jpg" alt="image-2">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /flip-card-container -->
+
+        <!-- flip-card-container -->
+        <div class="flip-card-container" style="--hue: 350">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/sit-ups-front.jpg" alt="Brohm Lake">
+                        <figcaption>Sit Ups</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <!-- only if the image is necessary -->
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/sit-ups-back.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <!-- can add svg here and remove these eight spans -->
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/pull-up-back.jpg" alt="Brohm Lake">
+                        <figcaption>Pull Ups</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/pull-up-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/single-hand-dumbell-front.jpg" alt="Brohm Lake">
+                        <figcaption>Dumbell Row Back</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <figcaption>Biceps Curl</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <figcaption>Biceps Curl</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <figcaption>Biceps Curl</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="flip-card-container" style="--hue: 220">
+            <div class="flip-card">
+
+                <div class="card-front">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <figcaption>Biceps Curl</figcaption>
+                    </figure>
+
+                    <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                    </ul>
+                </div>
+
+                <div class="card-back">
+                    <figure>
+                        <div class="img-bg"></div>
+                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                    </figure>
+
+                    <button>Start</button>
+
+                    <div class="design-container">
+                        <span class="design design--1"></span>
+                        <span class="design design--2"></span>
+                        <span class="design design--3"></span>
+                        <span class="design design--4"></span>
+                        <span class="design design--5"></span>
+                        <span class="design design--6"></span>
+                        <span class="design design--7"></span>
+                        <span class="design design--8"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="write">
+            <h1>Write to Us</h1>
+            <form action="">
+                <label for="naam">First Name</label><br>
+                <input type="text" name="" id="naam">
+                <div id="write-sub">
+                    <span>
+                        <label for="mail">Email</label><br>
+                    <input type="email" id="mail">
+                    </span>
+                    <span>
+                        <label for="number">Phone</label><br>
+                    <input type="number" name="" id="number">
+                    </span>
+                </div>
+
+                <label for="bol_jaldi">Type Your message here...</label><br>
+                <input type="text" id="bol_jaldi"><br>
+
+                <button>Submit</button>
+            </form>
+        </div>
+        <div id="contact">
+            <p>Office: Shadara, New Delhi, 110093 India</p>
+            <span id="email">Email: arjundagar28@gmail.com</span>
+            <span>Tel: 123-456-7890   |    Fax: 123-456-7890</span>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<!-- <script src="{{ url_for('static',filename='exercise.js') }}"></script> -->
+
+<script>
+    document.getElementById("bicep-start").addEventListener("click", function () {
+        document.getElementById("jo-change-karni-hai").classList.toggle("webcam-outlet");
+        document.getElementById("jo-change-karni-hai").classList.toggle("webcam-outlet-change");
+        document.getElementById("jo-change-karni-hai").src = "{{ url_for('video') }}";
+        document.getElementById("close").style.zIndex = "200";
+    });
+
+    document.getElementById("close").addEventListener("click", function () {
+        document.getElementById("jo-change-karni-hai").classList.toggle("webcam-outlet");
+        document.getElementById("jo-change-karni-hai").classList.toggle("webcam-outlet-change");
+        document.getElementById("jo-change-karni-hai").src = "";
+        document.getElementById("close").style.zIndex = "-1";
+    });
+
+
+</script>
+
+</html>

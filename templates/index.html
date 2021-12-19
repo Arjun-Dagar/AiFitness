@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="top-button"><button><span><a href="#header">^</a></span></button></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{{ url_for('index') }}">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header">
+        <h1>AI Fitness Trainer</h1>
+        <p>What seems impossible today, will become your habit tommorow</p>
+        <button><a href="{{ url_for('exercise_page') }}">Rock Now</a></button>
+    </div>
+
+    <div id="about-cards">
+        <div class="cards">
+            <div class="image"><video src="{{ url_for('static',filename='community.mp4') }}"" autoplay muted loop></video></div>
+            <div class="para">
+                <h1>Community</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure magni tenetur veritatis asperiores
+                    minus labore quis enim accusamus explicabo maxime maiores, vitae delectus iste eum nam mollitia quae
+                    ea quas, sit molestiae illo nostrum! Omnis placeat aspernatur laudantium aliquid optio!</p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="para">
+                <h1>Motivation</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ad voluptatum, molestiae
+                    quibusdam corporis laborum ex quis vitae ipsum doloribus harum, ipsam hic? Repudiandae iure, qui
+                    commodi, aliquam eius similique, tempora sapiente odio magnam illum ut? Expedita dolorum ex
+                    excepturi facere. Nihil voluptatibus alias tempora, doloribus laborum eum dicta error!</p>
+            </div>
+            <div class="image">
+                <img src="{{ url_for('static',filename='motivation-image.jpg') }}" alt="">
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <img src="{{ url_for('static',filename='Result-image.jpg') }}" alt="">
+            </div>
+            <div class="para">
+                <h1>Results</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora libero necessitatibus a recusandae
+                    reiciendis! Quisquam iure est cumque ipsam impedit quaerat id, animi distinctio nesciunt, molestias,
+                    necessitatibus porro amet et sed illo deleniti explicabo at. Voluptatum, repellat. Labore, officiis
+                    id.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="write">
+            <h1>Write to Us</h1>
+            <form action="">
+                <label for="naam">First Name</label><br>
+                <input type="text" name="" id="naam">
+                <div id="write-sub">
+                    <span>
+                        <label for="mail">Email</label><br>
+                    <input type="email" id="mail">
+                    </span>
+                    <span>
+                        <label for="number">Phone</label><br>
+                    <input type="number" name="" id="number">
+                    </span>
+                </div>
+
+                <label for="bol_jaldi">Type Your message here...</label><br>
+                <input type="text" id="bol_jaldi"><br>
+
+                <button>Submit</button>
+            </form>
+        </div>
+        <div id="contact">
+            <p>Office: Shadara, New Delhi, 110093 India</p>
+            <span id="email">Email: arjundagar28@gmail.com</span>
+            <span>Tel: 123-456-7890   |    Fax: 123-456-7890</span>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
