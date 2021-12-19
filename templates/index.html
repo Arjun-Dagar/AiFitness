@@ -10,7 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
 
-    <title>Document</title>
+    <title>AI Fitness App</title>
 </head>
 
 <body>
@@ -18,15 +18,15 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('index') }}">Navbar</a>
+            <a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static',filename='logo.png') }}" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('exercise_page') }}">Exercise</a>
+                    <a class="nav-link" href="#">BMI Calculator</a>
                 </div>
             </div>
         </div>
@@ -41,20 +41,22 @@
     <div id="about-cards">
         <div class="cards">
             <div class="image"><video src="{{ url_for('static',filename='community.mp4') }}"" autoplay muted loop></video></div>
-            <div class="para">
-                <h1>Community</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure magni tenetur veritatis asperiores
-                    minus labore quis enim accusamus explicabo maxime maiores, vitae delectus iste eum nam mollitia quae
-                    ea quas, sit molestiae illo nostrum! Omnis placeat aspernatur laudantium aliquid optio!</p>
+            <div class=" para">
+                    <h1>Community</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure magni tenetur veritatis asperiores
+                        minus labore quis enim accusamus explicabo maxime maiores, vitae delectus iste eum nam mollitia
+                        quae
+                        ea quas, sit molestiae illo nostrum! Omnis placeat aspernatur laudantium aliquid optio!</p>
             </div>
         </div>
         <div class="cards">
             <div class="para">
                 <h1>Motivation</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ad voluptatum, molestiae
-                    quibusdam corporis laborum ex quis vitae ipsum doloribus harum, ipsam hic? Repudiandae iure, qui
-                    commodi, aliquam eius similique, tempora sapiente odio magnam illum ut? Expedita dolorum ex
-                    excepturi facere. Nihil voluptatibus alias tempora, doloribus laborum eum dicta error!</p>
+                <p> <span>I'm tired <br>
+                    It's too cold <br>
+                    It's too hot <br>
+                    It's raining <br></span>
+                    Let's go</p>
             </div>
             <div class="image">
                 <img src="{{ url_for('static',filename='motivation-image.jpg') }}" alt="">
@@ -66,10 +68,10 @@
             </div>
             <div class="para">
                 <h1>Results</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora libero necessitatibus a recusandae
-                    reiciendis! Quisquam iure est cumque ipsam impedit quaerat id, animi distinctio nesciunt, molestias,
-                    necessitatibus porro amet et sed illo deleniti explicabo at. Voluptatum, repellat. Labore, officiis
-                    id.</p>
+                <p>Going to the gym every day can help improve your cardiovascular system, strengthen your muscles, help
+                    you maintain your weight, boost your mental health and decrease the odds that you'll develop other
+                    health conditions. Exercising daily strengthens your heart and allows it to pump more efficiently
+                    with less strain.</p>
             </div>
         </div>
     </div>

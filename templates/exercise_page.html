@@ -19,15 +19,15 @@
 
     <nav id="navi" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ url_for('index') }}">Navbar</a>
+            <a class="navbar-brand" href="{{ url_for('index') }}"><img src="{{ url_for('static',filename='logo.png') }}" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                    <a class="nav-link" href="{{ url_for('exercise_page') }}">Exercise</a>
+                    <a class="nav-link" href="#">BMI Calculator</a>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='biceps-front.jpg') }}" alt="Brohm Lake">
                         <figcaption>Biceps Curl</figcaption>
                     </figure>
 
@@ -55,7 +55,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-back.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='biceps-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button id="bicep-start">Start</button>
@@ -83,7 +83,7 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Image 2">
+                        <img src="{{ url_for('static',filename='Squats-front.jpg') }}" alt="Image 2">
                         <figcaption>Squats</figcaption>
                     </figure>
 
@@ -96,7 +96,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/squats-back.jpg" alt="image-2">
+                        <img src="{{ url_for('static',filename='squats-back.jpg') }}" alt="image-2">
                     </figure>
 
                     <button>Start</button>
@@ -124,7 +124,7 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/sit-ups-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='sit-ups-front.jpg') }}" alt="Brohm Lake">
                         <figcaption>Sit Ups</figcaption>
                     </figure>
 
@@ -138,7 +138,7 @@
                     <!-- only if the image is necessary -->
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/sit-ups-back.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='sit-ups-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
@@ -164,7 +164,7 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/pull-up-back.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='pull-up-back.jpg') }}" alt="Brohm Lake">
                         <figcaption>Pull Ups</figcaption>
                     </figure>
 
@@ -177,7 +177,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/pull-up-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='pull-up-front.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
