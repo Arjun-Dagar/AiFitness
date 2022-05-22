@@ -27,7 +27,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
                     <a class="nav-link" href="{{ url_for('exercise_page') }}">Exercise</a>
-                    <a class="nav-link" href="#">BMI Calculator</a>
+                    <a class="nav-link" href="{{ url_for('bmi_calculator') }}">BMI Calculator</a>
                 </div>
             </div>
         </div>
@@ -202,8 +202,8 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/single-hand-dumbell-front.jpg" alt="Brohm Lake">
-                        <figcaption>Dumbell Row Back</figcaption>
+                        <img src="{{ url_for('static',filename='push-up-front.jpg') }}" alt="Brohm Lake">
+                        <figcaption>Push ups</figcaption>
                     </figure>
 
                     <ul>
@@ -215,7 +215,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='push-up-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
@@ -240,8 +240,8 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
-                        <figcaption>Biceps Curl</figcaption>
+                        <img src="{{ url_for('static',filename='shoulder-press-front-1.jpg') }}" alt="Brohm Lake">
+                        <figcaption>Shoulder Press</figcaption>
                     </figure>
 
                     <ul>
@@ -253,7 +253,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='shoulder-press-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
@@ -278,8 +278,8 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
-                        <figcaption>Biceps Curl</figcaption>
+                        <img src="{{ url_for('static',filename='deadlift-front.jpg') }}" alt="Brohm Lake">
+                        <figcaption>Deadlift</figcaption>
                     </figure>
 
                     <ul>
@@ -291,7 +291,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='deadlift-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
@@ -316,8 +316,8 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
-                        <figcaption>Biceps Curl</figcaption>
+                        <img src="{{ url_for('static',filename='single-hand-dumbell-front.jpg') }}" alt="Brohm Lake">
+                        <figcaption>Single Hand Dumbell</figcaption>
                     </figure>
 
                     <ul>
@@ -329,7 +329,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='single-hand-dumbell-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>
@@ -354,8 +354,8 @@
                 <div class="card-front">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/biceps-front.jpg" alt="Brohm Lake">
-                        <figcaption>Biceps Curl</figcaption>
+                        <img src="{{ url_for('static',filename='triceps-front.jpg') }}" alt="Brohm Lake">
+                        <figcaption>Triceps Pushdown</figcaption>
                     </figure>
 
                     <ul>
@@ -367,7 +367,7 @@
                 <div class="card-back">
                     <figure>
                         <div class="img-bg"></div>
-                        <img src="./img/Squats-front.jpg" alt="Brohm Lake">
+                        <img src="{{ url_for('static',filename='triceps-back.jpg') }}" alt="Brohm Lake">
                     </figure>
 
                     <button>Start</button>

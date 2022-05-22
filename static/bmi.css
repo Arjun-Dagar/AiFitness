@@ -1,0 +1,55 @@
+:root {
+    --font1: normal normal normal avenir-lt-w01_35-light1475496,
+      avenir-lt-w05_35-light, sans-serif;
+    --color1: rgb(98, 54, 212);
+  }
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font: var(--font1);
+    padding-top: 76px;
+    /* background-color: #4D26B1; */
+}
+
+#main-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+#main-container form label{
+    font: var(--font1);
+    font-size: 1.4rem;
+}
+
+#main-container form input{
+    border: none;
+    border-bottom: 2px solid var(--color1);
+    margin-bottom: 20px;
+}
+
+#main-container form span{
+    margin-top: 5px;
+}
+
+#main-container form button{
+    border: none;
+    background: var(--color1);
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 3px 20px;
+    margin-right: 5px;
+}
+
+#result h1{
+    border-radius: 8px;
+    padding: 4px 14px;
+    transition: all 0.5s;
+}

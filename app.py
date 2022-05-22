@@ -14,6 +14,9 @@ def index():
 def exercise_page():
     return render_template('exercise_page.html')
 
+@app.route('/bmi_calculator')
+def bmi_calculator():
+    return render_template('bmi.html')
 
 def gen(camera):
     while True:
